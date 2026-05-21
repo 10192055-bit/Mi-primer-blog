@@ -1,0 +1,392 @@
+
+Creación de Paola Cruz DS1B
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Algoritmos, Diagramas de Flujo y Pseudocódigo</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#ffedd5,#fff7ed);
+    color:#333;
+    min-height:100vh;
+}
+
+/* ENCABEZADO */
+
+header{
+    background: linear-gradient(90deg,#ea580c,#fb923c);
+    color:white;
+    padding:40px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+header h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+}
+
+/* BOTONES */
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:30px;
+}
+
+.menu button{
+    background:#f97316;
+    border:none;
+    color:white;
+    padding:15px 30px;
+    border-radius:12px;
+    font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.menu button:hover{
+    background:#ea580c;
+    transform:scale(1.05);
+}
+
+/* CONTENEDOR */
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    margin-bottom:50px;
+}
+
+/* SECCIONES */
+
+.section{
+    display:none;
+    background:white;
+    border-left:8px solid #f97316;
+    border-radius:15px;
+    padding:30px;
+    margin-top:20px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    animation:fade 0.5s ease;
+}
+
+/* MOSTRAR */
+
+.active{
+    display:block;
+}
+
+/* TITULOS */
+
+.section h2{
+    color:#ea580c;
+    margin-bottom:20px;
+    font-size:32px;
+}
+
+.section h3{
+    color:#f97316;
+    margin-top:25px;
+    margin-bottom:10px;
+}
+
+/* TEXTO */
+
+.section p{
+    line-height:1.8;
+    margin-bottom:15px;
+    text-align:justify;
+}
+
+/* CAJAS */
+
+.box{
+    background:#fff7ed;
+    border:2px solid #fdba74;
+    border-radius:12px;
+    padding:20px;
+    margin:20px 0;
+}
+
+/* LISTAS */
+
+ul{
+    margin-left:20px;
+    margin-top:10px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* CODIGO */
+
+pre{
+    background:#1e293b;
+    color:#f8fafc;
+    padding:15px;
+    border-radius:10px;
+    overflow:auto;
+    margin-top:10px;
+}
+
+/* ANIMACION */
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#ea580c;
+    color:white;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ALGORITMOS, DIAGRAMAS DE FLUJO Y PSEUDOCÓDIGO</h1>
+    <p>Aprende sobre las tres herramientas para desarrollar un pensamiento lógico</p>
+</header>
+
+<!-- BOTONES -->
+
+<div class="menu">
+    <button onclick="mostrarSeccion('algoritmos')">Algoritmos</button>
+    <button onclick="mostrarSeccion('diagramas')">Diagramas de Flujo</button>
+    <button onclick="mostrarSeccion('pseudocodigo')">Pseudocódigo</button>
+</div>
+
+<div class="container">
+
+    <!-- ALGORITMOS -->
+
+    <section id="algoritmos" class="section active">
+
+        <h2>¿Qué es un Algoritmo?</h2>
+
+        <p>
+            Un algoritmo es un conjunto ordenado de pasos que permite resolver un problema
+            o realizar una tarea específica. Los algoritmos son fundamentales en la programación,
+            ya que indican exactamente qué acciones debe ejecutar una computadora.
+        </p>
+
+        <div class="box">
+            <h3>Importancia de los Algoritmos</h3>
+
+            <p>
+                Los algoritmos ayudan a organizar ideas, resolver problemas y automatizar procesos.
+                Gracias a ellos funcionan aplicaciones, redes sociales, videojuegos y sistemas bancarios.
+            </p>
+        </div>
+
+        <h3>Características de un Algoritmo</h3>
+
+        <ul>
+            <li><strong>Precisión:</strong> Las instrucciones deben ser claras y exactas.</li>
+            <li><strong>Orden lógico:</strong> Los pasos deben seguir una secuencia correcta.</li>
+            <li><strong>Finitud:</strong> Todo algoritmo debe terminar.</li>
+            <li><strong>Definición:</strong> Debe producir siempre el mismo resultado.</li>
+        </ul>
+
+        <div class="box">
+            <h3>Ejemplo de Algoritmo</h3>
+
+<pre>
+1. Leer número 1
+2. Leer número 2
+3. Sumar ambos números
+4. Mostrar resultado
+</pre>
+
+        </div>
+
+        <h3>Ventajas</h3>
+
+        <ul>
+            <li>Organizan ideas.</li>
+            <li>Reducen errores.</li>
+            <li>Facilitan la programación.</li>
+            <li>Mejoran el pensamiento lógico.</li>
+        </ul>
+
+    </section>
+
+    <!-- DIAGRAMAS -->
+
+    <section id="diagramas" class="section">
+
+        <h2>Diagramas de Flujo</h2>
+
+        <p>
+            Los diagramas de flujo son representaciones gráficas de un proceso o algoritmo.
+            Utilizan símbolos y flechas para mostrar visualmente cada paso.
+        </p>
+
+        <div class="box">
+
+            <h3>Importancia</h3>
+
+            <p>
+                Los diagramas ayudan a visualizar procesos complejos, detectar errores
+                y mejorar la comunicación entre programadores y usuarios.
+            </p>
+
+        </div>
+
+        <h3>Símbolos Principales</h3>
+
+        <ul>
+            <li><strong>Óvalo:</strong> Inicio o fin.</li>
+            <li><strong>Rectángulo:</strong> Procesos.</li>
+            <li><strong>Paralelogramo:</strong> Entrada y salida.</li>
+            <li><strong>Rombo:</strong> Decisiones.</li>
+            <li><strong>Flechas:</strong> Dirección del flujo.</li>
+        </ul>
+
+        <div class="box">
+
+            <h3>Ventajas</h3>
+
+            <ul>
+                <li>Mejor comprensión visual.</li>
+                <li>Facilitan enseñanza.</li>
+                <li>Ayudan en mantenimiento.</li>
+                <li>Reducen errores.</li>
+            </ul>
+
+        </div>
+
+        <div class="box">
+
+            <h3>Desventajas</h3>
+
+            <ul>
+                <li>Pueden ser complejos.</li>
+                <li>Requieren tiempo.</li>
+                <li>Necesitan actualización constante.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <!-- PSEUDOCODIGO -->
+
+    <section id="pseudocodigo" class="section">
+
+        <h2>Pseudocódigo</h2>
+
+        <p>
+            El pseudocódigo es una forma sencilla de representar la lógica de un programa
+            utilizando lenguaje natural y estructuras similares a la programación.
+        </p>
+
+        <div class="box">
+
+            <h3>Características</h3>
+
+            <ul>
+                <li>Fácil de leer.</li>
+                <li>Independiente del lenguaje.</li>
+                <li>Flexible y estructurado.</li>
+            </ul>
+
+        </div>
+
+        <h3>Palabras Utilizadas</h3>
+
+        <div class="box">
+
+<pre>
+Leer nombre
+Escribir "Hola"
+
+Si edad >= 18 Entonces
+    Escribir "Mayor de edad"
+FinSi
+</pre>
+
+        </div>
+
+        <h3>Ventajas</h3>
+
+        <ul>
+            <li>Facilita el aprendizaje.</li>
+            <li>Reduce errores lógicos.</li>
+            <li>Sirve como guía para programar.</li>
+        </ul>
+
+        <div class="box">
+
+            <h3>Desventajas</h3>
+
+            <ul>
+                <li>No puede ejecutarse.</li>
+                <li>No tiene estándar único.</li>
+                <li>Puede generar confusión si está mal organizado.</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    © 2026 - Página educativa de programación
+</footer>
+
+<script>
+
+function mostrarSeccion(id){
+
+    let secciones = document.querySelectorAll('.section');
+
+    secciones.forEach(sec => {
+        sec.classList.remove('active');
+    });
+
+    document.getElementById(id).classList.add('active');
+}
+
+</script>
+
+</body>
+</html>
+
+
