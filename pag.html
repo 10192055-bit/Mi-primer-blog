@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Romeo y Julieta</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#111;
+      color:white;
+      line-height:1.8;
+    }
+
+    header{
+      height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      background:linear-gradient(135deg,#1a1a1a,#2d132c,#801336);
+      padding:20px;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      color:#ffd6e0;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:1.3rem;
+      max-width:700px;
+      margin:auto;
+      color:#f0f0f0;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:14px 30px;
+      border:none;
+      border-radius:40px;
+      background:#ff4d6d;
+      color:white;
+      font-size:1rem;
+      cursor:pointer;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#ff758f;
+      transform:scale(1.05);
+    }
+
+    section{
+      padding:80px 12%;
+    }
+
+    .section-title{
+      font-size:2.5rem;
+      margin-bottom:25px;
+      color:#ffb3c1;
+      text-align:center;
+    }
+
+    .content{
+      font-size:1.1rem;
+      color:#e7e7e7;
+      text-align:justify;
+      margin-bottom:25px;
+    }
+
+    .box{
+      background:#1d1d1d;
+      padding:30px;
+      border-radius:20px;
+      margin-top:30px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.5);
+      transition:0.4s;
+    }
+
+    .box:hover{
+      transform:translateY(-5px);
+    }
+
+    .quote{
+      background:#191919;
+      border-left:5px solid #ff4d6d;
+      padding:25px;
+      border-radius:12px;
+      font-style:italic;
+      margin-top:30px;
+      font-size:1.2rem;
+    }
+
+    .hidden{
+      display:none;
+      margin-top:20px;
+      animation:fade 1s ease;
+    }
+
+    footer{
+      text-align:center;
+      padding:50px 20px;
+      background:#0a0a0a;
+      color:#ccc;
+    }
+
+    @keyframes fade{
+      from{
+        opacity:0;
+        transform:translateY(20px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <h1>Romeo y Julieta</h1>
+    <p>
+      Un blog literario sobre la obra más famosa de William Shakespeare.
+      Descubre la historia, los personajes, los hechos importantes,
+      el ambiente donde ocurre la obra y las enseñanzas que dejó esta tragedia.
+    </p>
+
+    <a href="#introduccion" class="btn">Leer Blog</a>
+  </div>
+</header>
+
+<section id="introduccion">
+  <h2 class="section-title">📚 Introducción</h2>
+
+  <p class="content">
+    Romeo y Julieta es una tragedia escrita por William Shakespeare alrededor del año 1597. La obra es considerada una de las historias de amor más importantes y conocidas de toda la literatura universal. A pesar de haber sido escrita hace muchos siglos, continúa siendo leída y representada en la actualidad debido a la intensidad de sus emociones y a los temas que desarrolla.
+  </p>
+
+  <p class="content">
+    La historia narra el amor imposible entre Romeo Montesco y Julieta Capuleto, dos jóvenes pertenecientes a familias enemigas. Shakespeare muestra cómo el odio, la violencia y las decisiones impulsivas terminan provocando una gran tragedia.
+  </p>
+
+  <div class="quote">
+    “¿Qué hay en un nombre? Lo que llamamos rosa tendría el mismo perfume con cualquier otro nombre.”
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🏰 Ambiente de la Obra</h2>
+
+  <div class="box">
+    <p class="content">
+      La historia de Romeo y Julieta se desarrolla en la ciudad de Verona, Italia. El ambiente de la obra mezcla romance, tensión, violencia y tragedia. Verona aparece como una ciudad elegante y llena de vida, pero también marcada por el conflicto constante entre dos familias importantes: los Montesco y los Capuleto.
+    </p>
+
+    <p class="content">
+      Las calles de Verona son escenario de peleas y discusiones entre ambas familias. Desde el inicio de la obra se observa un ambiente agresivo donde cualquier encuentro puede terminar en violencia. Esto provoca miedo y preocupación entre los habitantes de la ciudad.
+    </p>
+
+    <p class="content">
+      Por otro lado, Shakespeare también presenta lugares tranquilos y románticos, como el jardín y el balcón de Julieta. Estos espacios representan el amor y la esperanza dentro de un mundo lleno de odio. La famosa escena del balcón ocurre durante la noche, creando un ambiente íntimo y emotivo.
+    </p>
+
+    <p class="content">
+      Otro ambiente importante es la iglesia de Fray Lorenzo, un lugar que simboliza paz y reconciliación. Allí Romeo y Julieta se casan en secreto con la esperanza de terminar el conflicto entre sus familias.
+    </p>
+
+    <p class="content">
+      Finalmente, el ambiente cambia completamente en las últimas escenas de la obra. La tristeza, la desesperación y el silencio dominan el final trágico cuando Romeo y Julieta mueren. Shakespeare utiliza estos cambios de ambiente para transmitir emociones intensas al lector.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🎮 Interacciones del Blog</h2>
+
+  <div class="box">
+    <p class="content">
+      Presiona los botones para descubrir información especial sobre la obra.
+    </p>
+
+    <button class="btn" onclick="mostrarCuriosidad()">Curiosidad de la Obra</button>
+
+    <div id="curiosidad" class="hidden quote">
+      Shakespeare escribió Romeo y Julieta hace más de 400 años y aun así sigue siendo una de las historias de amor más conocidas del mundo.
+    </div>
+
+    <br><br>
+
+    <button class="btn" onclick="mostrarDato()">Dato Interesante</button>
+
+    <div id="dato" class="hidden quote">
+      La escena del balcón es una de las escenas románticas más famosas en la historia del teatro.
+    </div>
+
+    <br><br>
+
+    <button class="btn" onclick="mostrarFrase()">Frase Famosa</button>
+
+    <div id="frase" class="hidden quote">
+      “Así, con un beso, muero.”
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">❤️ Personajes Principales</h2>
+
+  <div class="box">
+    <h3>Romeo Montesco</h3>
+    <p class="content">
+      Es un joven romántico, sensible e impulsivo. Se enamora profundamente de Julieta y está dispuesto a enfrentar cualquier obstáculo por ella.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>Julieta Capuleto</h3>
+    <p class="content">
+      Julieta es inteligente, valiente y madura. Aunque es muy joven, demuestra una gran determinación al defender su amor por Romeo.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>Fray Lorenzo</h3>
+    <p class="content">
+      Es el sacerdote que ayuda a Romeo y Julieta a casarse en secreto con la esperanza de acabar con el odio entre las familias.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>Teobaldo</h3>
+    <p class="content">
+      Primo de Julieta y uno de los personajes más agresivos de la obra. Representa el odio y la rivalidad familiar.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🎭 Hechos Más Importantes de la Historia</h2>
+
+  <div class="box">
+    <h3>1. La enemistad entre Montescos y Capuletos</h3>
+    <p class="content">
+      La obra inicia mostrando el odio entre las dos familias más importantes de Verona. Las peleas en las calles provocan desorden y preocupan a toda la ciudad.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>2. Romeo asiste a la fiesta de los Capuleto</h3>
+    <p class="content">
+      Aunque los Montesco no eran bienvenidos, Romeo decide asistir disfrazado a una fiesta organizada por los Capuleto. Este hecho cambia completamente su vida.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>3. Romeo y Julieta se enamoran</h3>
+    <p class="content">
+      Durante la fiesta, Romeo y Julieta se conocen y sienten una conexión inmediata. Más tarde descubren que pertenecen a familias enemigas, pero aun así deciden seguir con su relación.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>4. La escena del balcón</h3>
+    <p class="content">
+      Romeo entra al jardín de Julieta y escucha cómo ella habla sobre su amor. Ambos prometen luchar por su relación y expresan sus sentimientos sinceramente.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>5. El matrimonio secreto</h3>
+    <p class="content">
+      Fray Lorenzo acepta casar a Romeo y Julieta en secreto porque piensa que esta unión podría terminar con el odio entre las familias.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>6. La muerte de Mercucio</h3>
+    <p class="content">
+      Mercucio, el mejor amigo de Romeo, pelea con Teobaldo y muere durante el enfrentamiento. Este momento marca un cambio importante en la historia.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>7. Romeo mata a Teobaldo</h3>
+    <p class="content">
+      Lleno de tristeza y enojo por la muerte de su amigo, Romeo decide vengarse y mata a Teobaldo. Como consecuencia, el príncipe de Verona lo destierra.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>8. Julieta debe casarse con Paris</h3>
+    <p class="content">
+      Los padres de Julieta organizan su matrimonio con Paris sin saber que ella ya está casada con Romeo. Julieta se siente desesperada y busca ayuda.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>9. El plan de Fray Lorenzo</h3>
+    <p class="content">
+      Fray Lorenzo entrega a Julieta una bebida especial que la hace parecer muerta por unas horas. El plan era que Romeo la rescatara después.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>10. Romeo cree que Julieta murió</h3>
+    <p class="content">
+      El mensaje de Fray Lorenzo nunca llega a Romeo. Al enterarse de la supuesta muerte de Julieta, Romeo pierde toda esperanza.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>11. El final trágico</h3>
+    <p class="content">
+      Romeo visita la tumba de Julieta y, creyendo que está muerta, decide quitarse la vida. Minutos después, Julieta despierta y al encontrar muerto a Romeo también se suicida.
+    </p>
+  </div>
+
+  <div class="box">
+    <h3>12. La reconciliación de las familias</h3>
+    <p class="content">
+      La muerte de Romeo y Julieta provoca tristeza en toda Verona. Finalmente, Montescos y Capuletos entienden el daño causado por el odio y hacen las paces.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🌟 Temas Principales</h2>
+
+  <div class="box">
+    <p class="content">
+      La obra desarrolla temas importantes como el amor verdadero, el destino, la violencia, la juventud y la reconciliación. Shakespeare demuestra cómo el odio puede destruir vidas inocentes y cómo las decisiones impulsivas pueden provocar consecuencias irreversibles.
+    </p>
+
+    <button class="btn" onclick="mostrarTexto()">Ver Enseñanza</button>
+
+    <div id="extra" class="hidden quote">
+      La principal enseñanza de Romeo y Julieta es que el odio y los conflictos familiares pueden destruir incluso el amor más puro y sincero.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">💬 Opinión Personal</h2>
+
+  <p class="content">
+    Romeo y Julieta es una obra muy interesante porque combina romance, drama y tragedia. La historia logra transmitir emociones profundas y hace reflexionar sobre la importancia del diálogo, la paz y el perdón.
+  </p>
+
+  <p class="content">
+    Además, aunque fue escrita hace muchos años, sus temas siguen siendo actuales porque muchas personas todavía enfrentan conflictos familiares, sociales o personales similares.
+  </p>
+</section>
+
+<section>
+  <h2 class="section-title">🖋️ Conclusión</h2>
+
+  <p class="content">
+    Romeo y Julieta continúa siendo una de las obras más importantes de la literatura universal debido a la fuerza de su historia y a las enseñanzas que deja. Shakespeare logró crear personajes inolvidables y una tragedia que demuestra tanto la belleza como el peligro de las emociones humanas.
+  </p>
+
+  <p class="content">
+    La obra enseña que el amor puede surgir incluso en medio del odio, pero también recuerda que la violencia y la falta de comunicación pueden destruir vidas.
+  </p>
+</section>
+
+<section>
+  <h2 class="section-title">📖 Explorador de Temas</h2>
+
+  <div class="box">
+    <button class="btn" onclick="mostrarAmor()">❤️ Amor</button>
+    <button class="btn" onclick="mostrarOdio()">⚔️ Odio</button>
+    <button class="btn" onclick="mostrarDestino()">⏳ Destino</button>
+
+    <div id="amor" class="hidden quote">
+      El amor entre Romeo y Julieta es tan fuerte que ambos desafían las reglas de sus familias.
+    </div>
+
+    <div id="odio" class="hidden quote">
+      El odio entre Montescos y Capuletos provoca violencia y tragedia en Verona.
+    </div>
+
+    <div id="destino" class="hidden quote">
+      Muchos acontecimientos de la obra parecen inevitables, como si el destino guiara la vida de los protagonistas.
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🎭 Mini Trivia</h2>
+
+  <div class="box">
+    <p class="content">¿Quién ayuda a Romeo y Julieta a casarse en secreto?</p>
+
+    <button class="btn" onclick="respuestaIncorrecta()">Teobaldo</button>
+    <button class="btn" onclick="respuestaCorrecta()">Fray Lorenzo</button>
+    <button class="btn" onclick="respuestaIncorrecta()">Paris</button>
+
+    <div id="resultado" class="hidden quote"></div>
+  </div>
+</section>
+
+<footer>
+  <h2>✨ Blog creado por Naomi Marisela Pérez Ayala ✨</h2>
+  <p>Proyecto literario sobre Romeo y Julieta</p>
+</footer>
+
+<script>
+  function mostrarTexto(){
+    const texto = document.getElementById('extra');
+
+    if(texto.style.display === 'block'){
+      texto.style.display = 'none';
+    }else{
+      texto.style.display = 'block';
+    }
+  }
+
+  function mostrarCuriosidad(){
+    const box = document.getElementById('curiosidad');
+    box.style.display = box.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function mostrarDato(){
+    const box = document.getElementById('dato');
+    box.style.display = box.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function mostrarFrase(){
+    const box = document.getElementById('frase');
+    box.style.display = box.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function mostrarAmor(){
+    document.getElementById('amor').style.display = 'block';
+    document.getElementById('odio').style.display = 'none';
+    document.getElementById('destino').style.display = 'none';
+  }
+
+  function mostrarOdio(){
+    document.getElementById('amor').style.display = 'none';
+    document.getElementById('odio').style.display = 'block';
+    document.getElementById('destino').style.display = 'none';
+  }
+
+  function mostrarDestino(){
+    document.getElementById('amor').style.display = 'none';
+    document.getElementById('odio').style.display = 'none';
+    document.getElementById('destino').style.display = 'block';
+  }
+
+  function respuestaCorrecta(){
+    const resultado = document.getElementById('resultado');
+    resultado.style.display = 'block';
+    resultado.innerHTML = '✅ Correcto. Fray Lorenzo ayudó a Romeo y Julieta a casarse en secreto.';
+  }
+
+  function respuestaIncorrecta(){
+    const resultado = document.getElementById('resultado');
+    resultado.style.display = 'block';
+    resultado.innerHTML = '❌ Respuesta incorrecta. Intenta nuevamente.';
+  }
+</script>
+
+</body>
+</html>
